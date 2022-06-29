@@ -1,0 +1,67 @@
+Syallbus of Javascript
+
+Features of Es6
+
+let and const Keywords
+Arrow Functions
+Multi-line Strings
+Default Parameters
+Template Literals
+Destructuring Assignment
+Enhanced Object Literals
+Promises
+Classes
+Modules
+
+
+
+What is javascript 
+
+Ans : javascript is interpreted client side,event bases object oriented programming language
+      JavaScript is a text-based programming language used both on the client-side and server-side .
+      JavaScript was developed by Brendan Eich in 1995, which appeared in Netscape, a popular browser of that time.
+      javascript is casesensitive language
+
+
+
+Advantage of javascript
+
+
+
+Features of javascript
+
+
+
+
+
+Variable in javascript
+
+Ans - There are 3 ways to declare a JavaScript variable:
+
+	Using var
+	Using let
+	Using const
+
+Names can contain letters, digits, underscores, and dollar signs.
+
+var declarations are globally scoped or function/locally scoped.
+var is function scoped when it is declared within a function. 
+This means that it is available and can be accessed only within that function.
+
+let
+A block is a chunk of code bounded by {}. A block lives in curly braces. Anything within curly braces is a block.
+
+Variables defined with let cannot be Redeclared.
+
+Variables defined with let must be Declared before use.
+
+Variables defined with let have Block Scope. 
+
+Const 
+
+
+javascript operaters
+
+
+
+

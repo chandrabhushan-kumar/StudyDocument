@@ -1,0 +1,27 @@
+Time table 
+
+Html (Total -76 topics)(Resoureces W3 school)
+Every day 3 topics
+
+CSS (98 Topics)(Resoures w3 school)
+
+Everyday 3 topics
+
+javascript (150 topics) (Resourecs w3 school, javainfo and javatpoint)
+
+
+React js 
+
+core react js  - 3 days
+
+Hooks - 4 days
+https://youtu.be/iVRO0toVdYM
+
+Redux - 10 days
+
+later planning 
+
+mongodb
+
+Nodejs 
+

@@ -1,0 +1,39 @@
+Resource link 
+
+1.https://www.youtube.com/watch?v=GGxK3oKimLA&list=PLZjjdd9-SJS0UiiJ0-dYk_PpI5GjYQ-Eb
+
+2.https://www.youtube.com/watch?v=X7Zop1c2gVI&list=PLUVqY59GNZQMYJgEO3KWXkGcd3JSEfUst
+ 
+3 https://www.youtube.com/watch?v=NqzdVN2tyvQ 
+What is Redux
+
+Ans - A container where we can store whole application data so we call it state management
+      
+Data flow in redux
+
+Four pilors
+
+1.Action  - collect data from api or component
+
+2.Reducer - get data from action and send to store
+
+3.store - state of complete application
+
+4.view - React component.
+
+
+Note = only one store in one redux complication 
+
+Folder structer of redux
+
+Components
+
+Containers
+
+Service
+   Actions
+	index.js
+   Reducer 
+       reucer.js
+      root-reducer.js
+   Contants

@@ -1,0 +1,365 @@
+1.What is React - 
+
+Ans-React is a JavaScript library created for building fast and interactive user interfaces for web and mobile applications. 
+It is an open-source, component-based, front-end library responsible only for the application’s view layer. 
+In Model View Controller (MVC) architecture, the view layer is responsible for how the app looks and feels. 
+React was created by Jordan Walke, a software engineer at Facebook. 
+
+
+2.Why React?
+
+1.Easy creation of dynamic applications: React makes it easier to create dynamic web applications because it requires less coding and offers more functionality, 
+					as opposed to JavaScript, where coding often gets complex very quickly.
+
+2.Improved performance: React uses Virtual DOM, thereby creating web applications faster.Virtual DOM compares the components’previous states and updates only the items in the Real DOM 
+			that were changed,instead of updating all of the components again, as conventional web applications do. 
+
+3.Reusable components: Components are the building blocks of any React application,and a single app usually consists of multiple components. 
+		      These components have their logic and controls, and they can be reused throughout the application which in turn dramatically reduces the application’s development time.
+
+4.Unidirectional data flow: React follows a unidirectional data flow. This means that when designing a React app, developers often nest child components within parent components.
+			   Since the data flows in a single direction, it becomes easier to debug errors and know where a problem occurs in an application at the moment in question.
+
+5.Small learning curve: React is easy to learn, as it mostly combines basic HTML and JavaScript concepts with some beneficial additions.Still, 
+			as is the case with other tools and frameworks, you have to spend some time to get a proper understanding of React’s library.
+
+
+
+
+Features of React js 
+
+1.JSX: It is faster than normal JavaScript as it performs optimizations while translating to regular JavaScript. 
+It makes it easier for us to create templates.
+						
+						or
+
+JSX is a syntax extension to JavaScript. It is used with React to describe what the user interface should look like. By using JSX,
+ we can write HTML structures in the same file that contains JavaScript code. This makes the code easier to understand and debug, as it avoids the usage of complex JavaScript DOM structures.
+
+2.Virtual DOM - When the state of an object changes in a React application, VDOM gets updated. 
+
+It then compares its previous state and then updates only those objects in the real DOM instead of updating all of the objects. This makes things move fast, 
+especially when compared to other front-end technologies that have to update each object even if only a single object changes in the web application.
+
+3.Performance: React.js use JSX, which is faster compared to normal JavaScript and HTML. Virtual DOM is a less time taking procedure to update webpages content.
+
+4.One way data-binding - React’s one-way data binding keeps everything modular and fast. A unidirectional data flow means that when a developer designs a React app, 
+they often nest child components within parent components. This way, a developer knows where and when an error occurs, giving them better control of the whole web application.
+
+5.Component: A Component is one of the core building blocks of React. In other words, we can say that every application you will develop in React will be made up of pieces called components. 
+Components make the task of building UIs much easier. You can see a UI broken down into multiple individual pieces called components and work on them independently and merge them all in a parent component which will be your final UI.
+
+What are the advantages of using React?
+
+
+Use of Virtual DOM to improve efficiency : React uses virtual DOM to render the view. As the name suggests, virtual DOM is a virtual representation of the real DOM. Each time the data changes in a react app, a new virtual DOM gets created. Creating a virtual DOM is much faster than rendering the UI inside the browser. Therefore, with the use of virtual DOM, the efficiency of the app improves.
+
+Gentle learning curve : React has a gentle learning curve when compared to frameworks like Angular. Anyone with little knowledge of javascript can start building web applications using React.
+
+SEO friendly : React allows developers to develop engaging user interfaces that can be easily navigated in various search engines. It also allows server-side rendering, which boosts the SEO of an app.
+
+Reusable components : React uses component-based architecture for developing applications. Components are independent and reusable bits of code. These components can be shared across various applications having similar functionality. The re-use of components increases the pace of development.
+Huge ecosystem of libraries to choose from: React provides you with the freedom to choose the tools, libraries, and architecture for developing an application based on your requirement.
+
+8.What is JSX?
+JSX stands for JavaScript XML. It allows us to write HTML inside JavaScript and place them in the DOM without using functions like appendChild( ) or createElement( ).
+
+As stated in the official docs of React, JSX provides syntactic sugar for React.createElement( ) function.
+
+Note- We can create react applications without using JSX as well.
+
+Let’s understand how JSX works:
+
+Without using JSX, we would have to create an element by the following process:
+
+9.What is the virtual DOM? How does react use the virtual DOM to render the UI?
+ virtual DOM is a concept where a virtual representation of the real DOM is kept inside the memory and is synced with the real DOM by a library such as ReactDOM.
+Why was virtual DOM introduced? 
+
+DOM manipulation is an integral part of any web application, but DOM manipulation is quite slow when compared to other operations in JavaScript. The efficiency of the application gets affected when several DOM manipulations are being done. Most JavaScript frameworks update the entire DOM even when a small part of the DOM changes.
+
+For example, consider a list that is being rendered inside the DOM. If one of the items in the list changes, the entire list gets rendered again instead of just rendering the item that was changed/updated. This is called inefficient updating.
+
+To address the problem of inefficient updating, the react team introduced the concept of virtual DOM.
+
+
+What is state 
+
+The state is a built-in React object that is used to contain data or information about the component. A component's state can change over time; whenever it changes, the component re-renders
+
+
+
+7.What is props 
+
+Props stand for "Properties." They are read-only components
+Props are immutable so we cannot modify the props from inside the component
+It gives a way to pass data from one component to other components. It is similar to function arguments. Props are passed to the component in the same way as arguments passed in a function.
+
+
+
+8.What is Prop Drilling?
+
+Prop drilling is basically a situation when the same data is being sent at almost every level due to requirements in the final level. Here is a diagram to demonstrate it better. Data needed to be sent from Parent to ChildC. In this article different ways to do that are discussed.
+
+
+
+
+10.What are the differences between controlled and uncontrolled components?
+Controlled and uncontrolled components are just different approaches to handling input from elements in react. 
+
+
+Controlled component: In a controlled component, the value of the input element is controlled by React. We store the state of the input element inside the code, and by using event-based callbacks, any changes made to the input element will be reflected in the code as well.
+When a user enters data inside the input element of a controlled component, onChange function gets triggered and inside the code, we check whether the value entered is valid or invalid. If the value is valid, we change the state and re-render the input element with the new value.
+
+Uncontrolled component: In an uncontrolled component, the value of the input element is handled by the DOM itself. Input elements inside uncontrolled components work just like normal HTML input form elements.
+The state of the input element is handled by the DOM. Whenever the value of the input element is changed, event-based callbacks are not called. Basically, react does not perform any action when there are changes made to the input element.
+
+Whenever use enters data inside the input field, the updated data is shown directly. To access the value of the input element, we can use ref.
+
+11.Name a few techniques to optimize React app performance.
+There are many ways through which one can optimize the performance of a React app, let’s have a look at some of them:
+
+Using useMemo( ) -
+It is a React hook that is used for caching CPU-Expensive functions.
+Sometimes in a React app, a CPU-Expensive function gets called repeatedly due to re-renders of a component, which can lead to slow rendering.
+useMemo( ) hook can be used to cache such functions. By using useMemo( ), the CPU-Expensive function gets called only when it is needed.
+Using React.PureComponent -
+It is a base component class that checks the state and props of a component to know whether the component should be updated.
+Instead of using the simple React.Component, we can use React.PureComponent to reduce the re-renders of a component unnecessarily.
+Maintaining State Colocation -
+This is a process of moving the state as close to where you need it as possible.
+Sometimes in React app, we have a lot of unnecessary states inside the parent component which makes the code less readable and harder to maintain. Not to forget, having many states inside a single component leads to unnecessary re-renders for the component.
+It is better to shift states which are less valuable to the parent component, to a separate component.
+Lazy Loading -
+ It is a technique used to reduce the load time of a React app. Lazy loading helps reduce the risk of web app performances to a minimum.
+
+12.How to pass data between react components?
+
+a.Parent Component to Child Component (using props)
+
+With the help of props, we can send data from a parent to a child component.
+
+Child Component to Parent Component (using callbacks)
+
+This one is a bit tricky. We follow the steps below:
+
+Create a callback in the parent component which takes in the data needed as a parameter.
+Pass this callback as a prop to the child component.
+Send data from the child component using the callback.
+We are considering the same example above but in this case, we are going to pass the updated counterValue from child to parent.
+
+Step1 and Step2: Create a callback in the parent component, pass this callback as a prop.
+
+function ParentComponent(props) {
+let [counter, setCounter] = useState(0);
+let callback = valueFromChild => setCounter(valueFromChild);
+return (
+  <div>
+    <p>Value of counter: {counter}</p>
+    <ChildComponent callbackFunc={callback} counterValue={counter} />
+  </div>
+);
+}
+As one can see in the code above, we created a function called callback which takes in the data received from the child component as a parameter.
+
+Next, we passed the function callback as a prop to the child component.
+
+Step3: Pass data from the child to the parent component.
+
+function ChildComponent(props) {
+let childCounterValue = props.counterValue;
+return (
+  <div>
+    <button onClick={() => props.callbackFunc(++childCounterValue)}>
+      Increment Counter
+    </button>
+  </div>
+);
+}
+
+13.What are Higher Order Components?
+ Higher-Order Component(HOC) is a function that takes in a component and returns a new component. 
+
+14.What are the different phases of the component lifecycle? 
+
+There are four different phases in the lifecycle of React component. They are:
+
+Initialization: During this phase, React component will prepare by setting up the default props and initial state for the upcoming tough journey.
+
+Mounting: Mounting refers to putting the elements into the browser DOM. Since React uses VirtualDOM, the entire browser DOM which has been currently rendered would not be refreshed. This phase includes the lifecycle methods componentWillMount and componentDidMount.
+
+Updating: In this phase, a component will be updated when there is a change in the state or props of a component. This phase will have lifecycle methods like componentWillUpdate, shouldComponentUpdate, render, and componentDidUpdate.
+
+Unmounting: In this last phase of the component lifecycle, the component will be removed from the DOM or will be unmounted from the browser DOM. This phase will have the lifecycle method named componentWillUnmount.
+
+
+Explain all life cycle metod in React
+
+
+
+14.Context API
+The React Context API is a component structure, which allows us to share data across all levels of the application. The main aim of Context API is to solve the problem of prop drilling (also called "Threading"). The Context API in React are given below.
+ or 
+Context API helps to directly send an information from a parent component to a child component at any level.
+
+a.React.createContext
+b.Context.provider
+c.Context.Consumer
+d.Class.contextType
+
+What are keys in React?
+
+A key is a special string attribute that needs to be included when using lists of elements.
+
+Keys help react identify which elements were added, changed or removed.
+
+Keys should be given to array elements for providing a unique identity for each element.
+
+Without keys, React does not understand the order or uniqueness of each element.
+
+With keys, React has an idea of which particular element was deleted, edited, and added.
+
+Keys are generally used for displaying a list of data coming from an API.
+
+What are error boundaries?
+
+Error boundaries are React components that catch JavaScript errors anywhere in their child component tree, log those errors, and display a fallback UI instead of the component tree that crashed. Error boundaries catch errors during rendering, in lifecycle methods, and in constructors of the whole tree below them.
+
+Error boundaries provide a way for us to catch errors that occur in the render phase.
+
+Error boundary will catch the error and display fallback ui
+
+There are two life cycle method in error boundary
+1.getdrivestwtefromerror(error)
+2.componentDidCatch(error info)
+
+What is callback function 
+
+The callback function is invoked when setState finished and the component gets rendered. Since setState is asynchronous the callback function is used for any post action. 
+
+or 
+A callback function is a function passed into another function as an argument, which is then invoked inside the outer function to complete some kind of routine or action.
+
+what is arrow function
+
+An arrow function expression is a compact alternative to a traditional function expression.
+
+Whst is pure components
+
+we use shouldComponentUpdate() Lifecycle method to customize the default behavior and implement it when the React component should re-render or update itself.
+
+ReactJS has provided us a Pure Component. If we extend a class with Pure Component, there is no need for shouldComponentUpdate() Lifecycle Method. ReactJS Pure Component Class compares current state and props with new props and states to decide whether the React component should re-render itself or  Not.
+
+In simple words, If the previous value of state or props and the new value of state or props is the same, the component will not re-render itself. Since Pure Components restricts the re-rendering when there is no use of re-rendering of the component. Pure Components are Class Components which extends React.PureComponent. 
+
+Explain React.fragment,React.element,React.createElement
+
+React Fragment -Fragments allow us to group a list of children without adding extra nodes to the DOM.
+
+Why we use Fragments?
+The main reason to use Fragments tag is:
+
+It makes the execution of code faster as compared to the div tag.
+It takes less memory.
+
+React Element - Elements are the smallest building blocks of React apps. An element specifies what should be there in our UI. An Element is a plain object describing what we want to appear in terms of the DOM nodes.
+
+
+what is Babel & webpack
+
+Babel - Babel is a transpiler i.e. it converts the JSX to vanilla JavaScript
+
+what is ref 
+ Ref is  directly manupulate the DOM  & elements
+
+what is server side rendering & client side rendering
+
+Server side rendering - Server-side rendering is the most common method for displaying information onto the screen. It works by converting HTML files in the server into usable information for the browser. 
+
+or 
+
+Server-side rendering (SSR) is an application’s ability to convert HTML files on the server into a fully rendered HTML page for the client. The web browser submits a request for information from the server, which instantly responds by sending a fully rendered page to the client.
+
+Some server-side rendering advantages include:
+
+A server-side rendered application enables pages to load faster, improving the user experience.
+When rendering server-side, search engines can easily index and crawl content because the content can be rendered before the page is loaded, which is ideal for SEO. 
+Webpages are correctly indexed because web browsers prioritize web pages with faster load times.
+Rendering server-side helps efficiently load webpages for users with slow internet connection or outdated devices.
+
+client side Rendering - client-side rendering, it’s about rendering content in the browser using JavaScript. So instead of getting all the content from the HTML document itself, a bare-bones HTML document with a JavaScript file in initial loading itself is received, which renders the rest of the site using the browser.
+
+what is Destructring 
+
+The destructuring assignment is an expression that makes it easy to extract values from arrays, or properties from objects, into distinct variables.
+
+There are two types of destructuring assignment expressions, namely, Array Destructuring and Object Destructuring. It can be used in the following manner :
+
+//Array Destructuring
+let fruits = ["Apple", "Banana"];
+let [a, b] = fruits; // Array destructuring assignment
+console.log(a, b);
+
+//Object Destructuring
+let person = {name: "Peter", age: 28};
+let {name, age} = person; // Object destructuring assignment
+console.log(name, age);
+
+
+What is Reconsilation
+
+
+How to prevent re-renders in React?
+
+If you’re using a React class component you can use the shouldComponentUpdate method or a React.PureComponent class extension to prevent a component from re-rendering. But, is there an option to prevent re-rendering with functional components?
+
+What is React Router?
+
+Explain conditional rendering in React.
+
+How to pass data between sibling components using React router?
+
+Differentiate between Real DOM and Virtual DOM.
+
+Why can’t browsers read JSX?
+
+ What is the purpose of render() in React.
+
+What is arrow function in React? How is it used?
+
+What is an event in React?
+
+What are synthetic events in React?
+
+What do you understand by refs in React?
+
+List some of the cases when you should use Refs.
+
+ How do you modularize code in React?
+
+ What is React Router?
+
+Why is switch keyword used in React Router v4?
+
+what is ues of this keyword in arrow function & callback function
+
+what is Event bubbling in react
+
+
+
+What is forwading ref
+
+what are the Libary of React js
+
+
+
+
+
+
+
+
+
+
+
+
+
